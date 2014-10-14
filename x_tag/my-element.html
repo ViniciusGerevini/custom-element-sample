@@ -1,0 +1,32 @@
+<script src="../bower_components/x-tag-core/src/core.js"></script>
+<template>
+	<style>
+		@import "./styles/default.css";
+	</style>
+	<div class="container">
+		<content select="h1"></content>
+		<content select="h2"></content>
+	</div>
+</template>
+
+<script>
+	(function(window, document, undefined) {
+
+		var elementDoc = document._currentScript.ownerDocument;
+
+		var template = elementDoc.querySelector('template').content;
+
+		xtag.register('my-element', {
+			lifecycle: {
+				created: function() {
+					var shadowRoot = this.createShadowRoot();
+
+					var clone = document.importNode(template, true);
+					clone.querySelector('.container').style.backgroundImage = "url('" + this.getAttribute('image') + "')";
+
+					shadowRoot.appendChild(clone);
+				}
+			}
+		});
+	})(window, document);
+</script>

@@ -1,0 +1,10 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="my-element" attributes="image" noscript>
+	<template>
+		<link rel="stylesheet" href="./styles/default.css">
+		<div class="container" style="background-image: url('{{ image }}');">
+			<content select="h1"></content>
+			<content select="h2"></content>
+		</div>
+	</template>
+</polymer-element>

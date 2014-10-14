@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="description" content="Web Components Examples">
+	<meta name="author" content="Vinicius Gerevini">
+
+	<title>Web Components - Exemplo</title>
+
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"/>
+
+	<style>
+
+		* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		body {
+			width: 100%;
+			font-family: sans-serif;
+			font-size: 16px;
+			color: #333;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 20px;
+			font-size: 43px;
+			text-transform: uppercase;
+		}
+
+		.author {
+			width: 100%;
+			text-align: center;
+			font-size: 14px;
+			padding: 10px;
+			line-height: 30px;
+			margin-top: 40px;
+		}
+
+		.author a, .author a:visited {
+			padding-left: 5px;
+			color: #333;
+			text-decoration: none;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		ul.elements {
+			margin: 0 auto;
+			margin-top: 30px;
+			max-width: 600px;
+		}
+
+		ul.elements li {
+			margin: 10px;
+			-webkit-box-shadow: 2px 2px 10px #555;
+			-moz-box-shadow: 2px 2px 10px #555;
+			box-shadow: 2px 2px 10px #555;
+		}
+
+		ul.elements li a {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			padding: 10px 20px;
+			font-size: 20px;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		ul.elements li:hover {
+			opacity: 0.8;
+		}
+
+
+		li.polymer {
+			background-color: #5677fc;
+		}
+
+		li.x-tag {
+			background-color: #D23F31;
+		}
+
+		li.native {
+			background-color: #259b24;
+		}
+
+		.author ul li {
+			display: inline-block;
+			padding: 5px 10px;
+			margin: 0px 5px;
+			background-color: #ddd;
+		}
+
+		.author ul li:hover {
+			background-color: #bbb;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>&lt;Web Components&gt;</h1>
+	Here are very basic examples of a custom element made with Polymer, X-Tag and native.<br/>
+	I kept it simple for easy understanding.<br/>
+
+	<ul class="elements">
+		<li class="native"><a href="./native" title="Native" target="_new">Native <small>(Only works in browsers with support)</small></a></li>
+		<li class="polymer"><a href="./polymer" title="Polymer" target="_new">Polymer</a></li>
+		<li class="x-tag"><a href="./x_tag" title="X-Tag" target="_new">X-Tag</a></li>
+	</ul>
+
+	<div class="author">
+		Vinicius Gerevini<br/><br/>
+
+		<ul>
+			<li class="ion-social-twitter">
+				<a href="http://twitter.com/vini_gerevini" title="Twitter" target="_new">@vini_gerevini</a>
+			</li>
+			<li class="ion-social-github">
+				<a href="http://github.com/ViniciusGerevini" title="Github" target="_new">ViniciusGerevini</a>
+			</li>
+			<li class="ion-social-github-outline">
+				<a href="http://viniciusgerevini.github.io/custom-element-sample" title="Github repository" target="_new">This repository</a>
+			</li>
+		</ul>
+
+	</div>
+</body>
+</html>

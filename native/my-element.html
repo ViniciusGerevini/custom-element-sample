@@ -1,0 +1,27 @@
+<template id="myTemplate">
+	<style>
+		@import "styles/default.css";
+	</style>
+	<div class="container">
+		<content select="h1"></content>
+		<content select="h2"></content>
+	</div>
+</template>
+
+<script>
+	(function() {
+	  var tmpl = document.currentScript.ownerDocument.querySelector('#myTemplate');
+	  var myProto = Object.create(HTMLElement.prototype);
+
+	  myProto.createdCallback = function() {
+	    var root = this.createShadowRoot();
+	    var template = tmpl.content.cloneNode(true);
+	    template.querySelector('.container').style.backgroundImage = 'url("' + this.getAttribute("image") +'")';
+	    root.appendChild(template);
+	  };
+
+	  var MyElement = document.registerElement('my-element', {
+	    prototype: myProto
+	  });
+	})();
+</script>

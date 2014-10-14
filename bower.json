@@ -1,0 +1,29 @@
+{
+  "name": "Web Components Examples",
+  "version": "0.1",
+  "authors": [
+    "Vinícius Gerevini <viniciusgerevini@gmail.com>"
+  ],
+  "description": "Example of Custom Elements using Polymer, X-Tag and native implementation.",
+  "main": "index.html",
+  "keywords": [
+    "web",
+    "components",
+    "custom",
+    "elements",
+    "polymer",
+    "x-tag"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.2",
+    "x-tag-core": "~0.9.9"
+  }
+}
