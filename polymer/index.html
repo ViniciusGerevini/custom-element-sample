@@ -11,8 +11,15 @@
 	<link rel="import" href="my-element.html">
 
 	<title>Polymer - Web Components Examples</title>
+
+	<style>
+	  /* Style to prevent FOUC */
+	  [unresolved] {
+	    opacity: 0;
+	  }
+	</style>
 </head>
-<body>
+<body unresolved>
 
 <my-element image="../images/duckdonald.gif">
 	<h2>Custom element with Polymer</h2>
